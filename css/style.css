@@ -1,0 +1,833 @@
+/* ===|| Font Intigration Start ||=== */
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    src: url(..//fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Medium.ttf);
+    src: url(..//fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: 'Lato', sans-serif;
+    src: url(..//fonts/Lato-Regular.ttf);
+    src: url(..//fonts/Lato-Bold.ttf);
+}
+/* ===|| Font Intigration End ||=== */
+
+/* ===|| Common CSS Start ||=== */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+p{
+    color: #8e8e8e;
+    line-height: 28px;
+}
+span.single-pipe {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 37px;
+}
+/* ===|| Common CSS End ||=== */
+
+
+/* ===|| Header CSS Start ||=== */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #fff;
+    margin-top: 0;
+    padding-top: 0;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 25%);
+}
+header .navbar {
+    padding-top: 0;
+    padding-bottom: 25px;
+}
+header nav a.navbar-brand {
+    padding-top: 0;
+}
+header nav a img{
+    width: 80%;
+}
+header nav ul {
+    margin-top: 25px;
+}
+header nav ul li{
+    margin-left: 30px;
+}
+header nav ul li a{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8e8e8e !important;
+}
+header nav ul li a:hover{
+    color: #333333 !important;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #333333 !important;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -320px;
+    margin-top: 25px;
+}
+.dropdown-menu {
+    min-width: 22em;
+}
+header form{
+    height: 28px;
+}
+header input{
+    margin-left: 7px;
+    width: 100%;
+    border:none;
+    padding: 0;
+}
+header input:focus{
+    outline: none;
+}
+header .t-right{
+    text-align: right;
+}
+header .s-btn{
+    width: 36px;
+    height: 36px;
+    background-color: #333333;
+    color: #fff;
+}
+header .s-btn:focus{
+    outline: none;
+}
+/* ===|| Header CSS End ||=== */
+
+/* ===|| Slider CSS Start ||=== */
+.slider{
+    margin-top: 80px;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.car-single{
+    margin: 220px 0;
+}
+.car-single h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+.car-single p{
+    margin: 20px 0 50px;
+    line-height: 25px;
+    color: #fff;
+}
+.car-single a{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #fff;
+    color: #333333;
+    transition: .2s;
+}
+
+.car-single a:hover{
+    background-color: #333333;
+    color: #fff;
+}
+.car-single a:hover i{
+    color: #fff;
+}
+.car-single a span{
+    margin-left: 10px;
+}
+.cp-icon, .cn-icon{
+    background-image: none;
+    color: #333333;
+}
+.car-prev, .car-next{
+    align-items: flex-end;
+    width: 3%;
+}
+.car-prev span{
+    text-align: left;
+}
+.car-next{
+    right: 90%;
+}
+.pipe-icon {
+    position: absolute;
+    left: 4.5%;
+    bottom: -1.1%;
+}
+.hslider-indicators {
+    margin: 0 0 14px;
+    left: 50px;
+    align-items: center;
+    justify-content: start;
+    z-index: 0;
+}
+.hslider-indicators [data-bs-target] {
+    width: 2px;
+    height: 15px;
+    background-color: #333333;
+    border: none;
+}
+#carousel-two{
+    position: relative;
+}
+
+/* ===|| Slider CSS End ||=== */
+
+
+/* ===|| Service CSS Start ||=== */
+.all-service{
+    padding: 100px 0;
+}
+.service h2{
+    margin-top: 10px;
+}
+.service p{
+    margin-top: 30px;
+}
+.single-service{
+    position: relative;
+    border: 1.5px solid #cccccc;
+    padding: 0 10px;
+    transition: .3s;
+}
+.single-service:hover{
+    border: 1.5px solid #333333;
+}
+.single-service .single-icon i{
+    margin-top: -20px;
+    padding: 0 5px;
+    background: #fff;
+    font-size: 60px;
+    font-weight: 300;
+    color: #8e8e8e;
+}
+.single-service:hover .single-icon i{
+    color: #333333;
+}
+.single-service h3{
+    margin: 60px 0 40px;
+}
+.single-service h3::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    top: 40%;
+    left: 40%;
+    background: #cccccc;
+}
+.single-service h6{
+    margin: 40px 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #8e8e8e;
+}
+.single-service:hover h6{
+    color: #333333;
+}
+.single-service h6 span{
+    margin-left: 10px;
+}
+
+/* ===|| Service CSS End ||=== */
+
+
+/* ===|| About CSS Start ||=== */
+.about{
+    padding-bottom: 130px;
+}
+.about-img img{
+    width: 100%;
+}
+.about-content a.cmn-btn {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #333333;
+    transition: .2s;
+}
+.about-content a.cmn-btn i{
+    margin-left: 10px;
+}
+.about-content a.cmn-btn:hover {
+    background-color: #333333;
+    color: #fff;
+}
+.about-content a.cmn-btn:hover i {
+    color: #fff;
+}
+.about-content h2{
+    margin-bottom: 40px;
+}
+.about-content p{
+    margin-bottom: 30px;
+}
+/* ===|| About CSS End ||=== */
+
+/* ===|| Recent Work CSS Start ||=== */
+#portfolio{
+    padding-bottom: 100px;
+    background-color: #f8f8f8;
+}
+#portfolio h2{
+    margin-top: 10px;
+}
+.filter-menu{
+    margin: 80px 0 30px;
+}
+.f-btn{
+    margin: 0 10px ;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: .3s;
+}
+.active-btn, .f-btn:hover{
+    color: #333333;
+    border: 1px solid #333333;
+}
+.item-mar{
+    margin-bottom: 25px;
+}
+.item-img {
+    position: relative;
+    overflow: hidden;
+}
+.item-img img{
+    width: 100%;
+}
+.item-img:hover img{
+    transform: scale(1.2);
+    transition: all 1s ease 0s;
+}
+.item-img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33333379;
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.item-img:hover:after{
+    opacity: 1;
+    transition: all 1s ease 0s;
+}
+.project-icon{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 1;
+}
+.item-img:hover .project-icon {
+    top: 30%;
+    transition: all 1s ease 0s;
+    visibility: visible;
+}
+.project-icon a i{
+    font-size: 60px;
+    color: #fff;
+}
+.project-title{
+    padding: 15px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    opacity: 0;
+    z-index: 9999;
+}
+.item-img:hover .project-title{
+    bottom: 0;
+    opacity: 1;
+    transition: all 1s ease 0s;
+}
+.project-title p{
+    margin-top: 18px;
+    line-height: 0;
+}
+/* ===|| Recent Work CSS End ||=== */
+
+/* ===|| Quality Provide CSS Start ||=== */
+#quality-service{}
+.quality-head h2{
+    margin-top: 10px;
+}
+.quality-pad{
+    padding: 90px 0 50px;
+}
+.single-quality{
+    border-bottom: 2px solid #cccccc;
+    transition: .3s;
+}
+.single-quality:hover{
+    border-color: #333333;
+}
+.single-quality .flex-item i{
+    margin-right: 20px;
+    font-size: 48px;
+}
+.single-quality .flex-item h3, i{
+    color: #8e8e8e;
+    transition: .3s;
+}
+.single-quality:hover .flex-item h3{
+    color: #333333;
+}
+.single-quality:hover .flex-item i{
+    color: #333333;
+}
+.single-quality p{
+    margin-top: 20px;
+}
+
+.item-mar2 {
+    margin-bottom: 40px;
+}
+/* ===|| Client CSS Start ||=== */
+#client-section{
+    background-image: url(../images/client-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.client-head h2{
+    margin-top: 10px;
+}
+.single-client{
+    position: relative;
+    overflow: hidden;
+}
+.single-client img{
+    width: 100%;
+}
+.client-content{
+    height: 80px;
+    background-color: #fff;
+    padding: 15px 0 15px 25px;
+}
+.client-icon{
+    position: absolute;
+    top:40%;
+    left: -100%;
+    width: 16%;
+    background-color: #fff;
+    text-align: center;
+    transform: translateY(-50%);
+    transition: all .3s ease 0s;
+
+}
+.single-client:hover .client-icon{
+    left: 0;
+}
+.client-icon ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.client-icon ul li{
+    list-style: none;
+}
+.client-icon ul li i{
+    padding-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 22px;
+    transition: .5s;
+}
+.client-icon ul li i:hover {
+    color: #333333;
+    border-right: 1px solid #333333;
+}
+.client-pad{
+    padding: 90px 0;
+}
+#client-section .item-mar2{
+    margin-bottom: 25px;
+}
+/* ===|| Client CSS End ||=== */
+
+
+/* ===|| Pricing CSS Start ||=== */
+#pricing-section{
+    
+}
+.all-price{
+    padding: 90px 0;
+}
+.single-price{
+    position: relative;
+    padding: 20px 0;
+    border: 1px solid #cccccc;
+}
+.single-price:hover{
+    border: 1px solid #333333;
+}
+.single-price h3{
+    position: absolute;
+    top: -3%;
+    left: 12%;
+    display: inline-block;
+    background-color: #fff;
+    padding:5px;
+}
+.single-price ul {
+    margin-top: 40px;
+}
+.price{
+    margin-bottom: 30px;
+}
+.single-price ul li p span{
+    font-size: 36px;
+    color: #333333;
+}
+.single-price ul li{
+    list-style: none;
+}
+.single-price  a.cmn-btn {
+    margin: 10px 0 20px;
+    width: 70%;
+    height: 50px;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    color: #8e8e8e;
+    transition: .3s;
+}
+.single-price  a.cmn-btn span{
+    margin-left: 10px;
+}
+.single-price:hover a.cmn-btn{
+    border: 1px solid #333333;
+    color: #333333;
+}
+/* ===|| Pricing CSS End ||=== */
+
+/* ===|| Add CSS Start||=== */
+#add{
+    background-color: #f8f8f8;
+}
+#add ul{
+    margin-top: 35px;
+    padding-left: 0;
+}
+#add ul li{
+    list-style: none;
+    display: inline-block;
+}
+#add .price-btn{
+    text-align: right;
+}
+#add ul li a{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333333;
+}
+#add a.cmn-btn {
+    margin: 20px 0 20px;
+    width: 70%;
+    height: 50px;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    color: #8e8e8e;
+    transition: .3s;
+}
+#add a.cmn-btn span{
+    margin-left: 10px;
+}
+#add a.cmn-btn:hover {
+    background-color: #333333;
+    color: #fff;
+}
+#add a.cmn-btn:hover i{
+    color: #fff;
+}
+/* ===|| Add CSS End||=== */
+
+
+/* ===|| Team CSS Start|=== */
+#team-section{
+    padding: 90px 30px;
+}
+.team-pad{
+    padding: 30px 20px;
+    border: 1px solid #cccccc;
+}
+.team-img{
+    padding: 0 5px;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+    height: 250px;
+}
+.team-img i{
+    position: absolute;
+    left: 8%;
+    top: 5%;
+    font-size: 30px;
+    color: #333333;
+}
+.team-content{
+    padding-left: 5px;
+}
+.team-content h6{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #8e8e8e;
+}
+.team-content h6.h6color{
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.team-content p{
+    line-height: 24px;
+}
+ 
+/* Next Prev Button */
+.nextprev-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #cccccc;
+    background-color: #f8f8f8;
+}
+
+.next-btn, .prev-btn{
+    position: static;
+    font-weight: 500;
+	color: #8e8e8e;
+	font-size: 18px;
+	text-transform: uppercase;
+	transform: rotate(90deg);
+}
+
+.next-btn:hover,
+.next-btn:focus,
+.prev-btn:hover,
+.prev-btn:focus{
+	color: #333333;
+}
+
+.three-indicators{
+	position: static;
+	transform: rotate(90deg);
+}
+
+.three-indicators [data-bs-target] {
+    margin: 75px -3px;
+    background-color: #8e8e8e;
+    width: 15px;
+    height: 2px;
+    transform: rotate(90deg);
+}
+
+
+.three-indicators [data-bs-target].active{
+	width: 20px;
+	background-color: #333333;
+}
+/* ===|| Team CSS End|=== */
+
+
+/* ===|| Contact CSS Start |=== */
+#contact-section{}
+.contact{
+    border: 1px solid #cccccc;
+}
+.contact-form{
+    margin-top: 20px;
+}
+.contact-head{
+    margin: 0 auto;
+    width: 18%;
+    position: relative;
+    top: -19px;
+    background-color: #ffffff;
+}
+.c-focus{
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1;
+}
+.c-focus:focus {
+    border-color: #333333;
+    color: #333333;
+    box-shadow: none;
+}
+.c-focus:focus::placeholder {
+    color: #333333;
+}
+.text-msg{
+    margin-top: 20px;
+    height: 100px;
+}
+#contact-section a.cmn-btn {
+    margin: 20px 0 40px;
+    width: 25%;
+    height: 50px;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    color: #8e8e8e;
+    transition: .3s;
+}
+#contact-section a.cmn-btn i{
+    margin-left: 10px;
+}
+#contact-section a.cmn-btn:hover {
+    background-color: #333333;
+    color: #fff;
+}
+#contact-section a.cmn-btn:hover i{
+    color: #fff;
+}
+#contact-section{
+    padding: 20px 0 100px;
+}
+/* ===|| Contact CSS End |=== */
+
+
+/* ===|| Footer CSS Start |=== */
+footer{
+    background: url(../images/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .footer-par{
+    margin-top: 20px;
+    padding: 0 30px;
+}
+footer .footer-par p{
+    color: #fff;
+}
+footer .footer-icon{
+    margin-top: 30px;
+}
+footer .footer-icon ul li{
+    margin: 0 5px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #fff;
+}
+footer .footer-icon ul li a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+}
+footer .footer-icon ul li i{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+footer .footer-icon ul li:hover{
+    background-color: #fff;
+}
+footer .footer-icon ul li:hover i{
+    color: #333333;
+}
+.foot-bottom{
+    padding: 30px 0 10px;
+}
+.footer-top{
+    padding: 0 0 50px;
+    border-bottom: 1px solid #fff;
+}
+.footer-menu{
+    text-align: right;
+}
+.footer-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-menu ul li a:hover{
+    color: #dddddd;
+}
+.foot-bottom p{
+    color: #fff;
+}
+/* ===|| Footer CSS End |=== */
